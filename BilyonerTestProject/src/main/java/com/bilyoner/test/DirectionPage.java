@@ -48,9 +48,7 @@ public class DirectionPage {
 
 		driver.findElement(By.className("loginButton")).click();
 		
-		driver.findElement(By.linkText("ÝDDAA")).click();
-	    driver.findElement(By.cssSelector("h2 > a")).click();
-
+		
 		try {
 			Assert.assertTrue(expectedUserName.equals(actualUserName) && expectedPassword.equals(actualPassWord));
 			logger.info("Sisteme " + driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div[1]/span[1]")).getText() + " olarak giriþ yapýldý.");
